@@ -581,6 +581,17 @@ html, body, #wrap, #loading {
 }
 
 /* line 19, ../sass/_sprites.scss */
+.p4_s_0 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  height: 550px;
+  width: 640px;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
 .p4_s_1 {
   position: absolute;
   left: 0;
@@ -1052,6 +1063,9 @@ html, body, #wrap, #loading {
   background: url(../images/sprites/p4_right.png) 0 0 no-repeat;
 }
 /* line 28, ../sass/_sprites.scss */
+.onload .p4_s_0 {
+  background: url(../images/sprites/p4_s_1.png) 0 0 no-repeat;
+}
 .onload .p4_s_1 {
   background: url(../images/sprites/p4_s_1.png) 0 0 no-repeat;
 }

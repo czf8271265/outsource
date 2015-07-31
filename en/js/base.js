@@ -10,10 +10,10 @@ function swipeToSwitch(dir,page){
 	var now=page;
 	if(page==3 || page==4 || page==5){
 		if(dir=="swipeRight"){
-			$(".p"+page+"_left").trigger("touchstart");
+			$(".p"+(page+1)+"_left").trigger("touchstart");
 		}
 		if(dir=="swipeLeft"){
-			$(".p"+page+"_right").trigger("touchstart");
+			$(".p"+(page+1)+"_right").trigger("touchstart");
 		}
 	}
 }
@@ -106,9 +106,9 @@ $(function(){
 	});
 
 	var p4now=0;
-	var p4len=4;
+	var p4len=5;
 	$(".p4_right").bind("touchstart",function(e){
-		if(p4now<p4len-1){
+		if(p4now<p4len){
 			p4now++;
 		}
 		if(p4now==0){
@@ -116,12 +116,12 @@ $(function(){
 		}else{
 			$(".p4_left").show();
 		}
-		if(p4now==p4len-1){
+		if(p4now==p4len){
 			$(".p4_right").hide();
 		}else{
 			$(".p4_right").show();
 		}
-		$(".p4_s_"+(p4now+1)).addClass("in").siblings().removeClass("in");
+		$(".p4_s_"+(p4now)).addClass("in").siblings().removeClass("in");
 		$(".p4_dot").find("span").eq(p4now).addClass("now").siblings().removeClass("now")
 	});
 	$(".p4_left").bind("touchstart",function(e){
@@ -138,7 +138,7 @@ $(function(){
 		}else{
 			$(".p4_right").show();
 		}
-		$(".p4_s_"+(p4now+1)).addClass("in").siblings().removeClass("in");
+		$(".p4_s_"+(p4now)).addClass("in").siblings().removeClass("in");
 		$(".p4_dot").find("span").eq(p4now).addClass("now").siblings().removeClass("now")
 	});
 
