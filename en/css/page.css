@@ -547,7 +547,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 501px;
+  height: 186px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -588,6 +588,18 @@ html, body, #wrap, #loading {
   right: auto;
   height: 619px;
   width: 640px;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 19, ../sass/_sprites.scss */
+.p4_s_0_1 {
+  position: absolute;
+  left: 45px;
+  top: 7px;
+  right: auto;
+  height: 549px;
+  width: 549px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -1067,6 +1079,9 @@ html, body, #wrap, #loading {
 /* line 28, ../sass/_sprites.scss */
 .onload .p4_s_0 {
   background: url(../images/sprites/p4_s_0.png) 0 0 no-repeat;
+}
+.onload .p4_s_0_1 {
+  background: url(../images/sprites/p4_s_0_1.png) 0 0 no-repeat;
 }
 .onload .p4_s_1 {
   background: url(../images/sprites/p4_s_1.png) 0 0 no-repeat;
@@ -2086,6 +2101,11 @@ html, body, #wrap, #loading {
   opacity: 1;
 }
 
+.p4_s_0.in .p4_s_0_1{
+  -moz-animation: spinner2 6s linear infinite;
+  -webkit-animation: spinner2 6s linear infinite;
+  animation: spinner2 6s linear infinite;
+}
 /* line 159, ../sass/page.scss */
 .p4_s_img.in ~ .p4_s_img {
   -moz-transform: translate3d(100%, 0, 0);
