@@ -584,9 +584,9 @@ html, body, #wrap, #loading {
 .p4_s_0 {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -18px;
   right: auto;
-  height: 550px;
+  height: 619px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -690,7 +690,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 415px;
+  height: 455px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -703,7 +703,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 415px;
+  height: 455px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -716,7 +716,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 415px;
+  height: 455px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -729,7 +729,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 415px;
+  height: 455px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -742,7 +742,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 415px;
+  height: 455px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -794,7 +794,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 510px;
+  height: 650px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -807,7 +807,7 @@ html, body, #wrap, #loading {
   left: 0;
   top: 0;
   right: auto;
-  height: 510px;
+  height: 650px;
   width: 640px;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -1066,7 +1066,7 @@ html, body, #wrap, #loading {
 }
 /* line 28, ../sass/_sprites.scss */
 .onload .p4_s_0 {
-  background: url(../images/sprites/p4_s_1.png) 0 0 no-repeat;
+  background: url(../images/sprites/p4_s_0.png) 0 0 no-repeat;
 }
 .onload .p4_s_1 {
   background: url(../images/sprites/p4_s_1.png) 0 0 no-repeat;
@@ -1974,7 +1974,7 @@ html, body, #wrap, #loading {
 }
 
 /* line 130, ../sass/page.scss */
-.p2_07 {
+.p2_09 {
   top: 575px;
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
@@ -1983,21 +1983,12 @@ html, body, #wrap, #loading {
 }
 
 /* line 131, ../sass/page.scss */
-.p2_09 {
+.p2_11 {
   top: 673px;
   -moz-transition-delay: 1.2s;
   -o-transition-delay: 1.2s;
   -webkit-transition-delay: 1.2s;
   transition-delay: 1.2s;
-}
-
-/* line 132, ../sass/page.scss */
-.p2_11 {
-  top: 774px;
-  -moz-transition-delay: 1.4s;
-  -o-transition-delay: 1.4s;
-  -webkit-transition-delay: 1.4s;
-  transition-delay: 1.4s;
 }
 
 /* line 134, ../sass/page.scss */
@@ -2156,7 +2147,7 @@ html, body, #wrap, #loading {
 /* line 169, ../sass/page.scss */
 .p4_dot {
   position: absolute;
-  top: 870px;
+  top: 916px;
   left: 0;
   right: 0;
   text-align: center;
@@ -2196,7 +2187,7 @@ html, body, #wrap, #loading {
 /* line 177, ../sass/page.scss */
 .p5_s {
   position: absolute;
-  top: 367px;
+  top: 317px;
   left: 0;
 }
 
@@ -2270,7 +2261,7 @@ html, body, #wrap, #loading {
 /* line 190, ../sass/page.scss */
 .p6_s {
   position: absolute;
-  top: 332px;
+  top: 232px;
   left: 0;
 }
 
@@ -2551,7 +2542,7 @@ html, body, #wrap, #loading {
 /* line 244, ../sass/page.scss */
 .down {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   right: 0;
   top: auto;

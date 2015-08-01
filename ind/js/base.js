@@ -62,8 +62,8 @@ $(function(){
 		}
 	});
 	
-	$(".lang1").attr("href",toEnglishVersion);
-	$(".lang2").attr("href",toIndoVersion);
+	$(".lang1").attr("href",toIndoVersion);
+	$(".lang2").attr("href",toEnglishVersion);
 	//share
 	var share = spa.share({
 		  text : $("meta[name='shareText']").attr("content"),
@@ -110,7 +110,7 @@ $(function(){
 	var p4now=0;
 	var p4len=5;
 	$(".p4_right").bind("touchstart",function(e){
-		if(p4now<p4len){
+		if(p4now<p4len-1){
 			p4now++;
 		}
 		if(p4now==0){
@@ -118,7 +118,7 @@ $(function(){
 		}else{
 			$(".p4_left").show();
 		}
-		if(p4now==p4len){
+		if(p4now==p4len-1){
 			$(".p4_right").hide();
 		}else{
 			$(".p4_right").show();

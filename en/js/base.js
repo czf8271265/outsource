@@ -61,8 +61,8 @@ $(function(){
 		}
 	});
 	
-	$(".lang1").attr("href",toEnglishVersion);
-	$(".lang2").attr("href",toIndoVersion);
+	$(".lang1").attr("href",toIndoVersion);
+	$(".lang2").attr("href",toEnglishVersion);
 	//share
 	var share = spa.share({
 		  text : $("meta[name='shareText']").attr("content"),
