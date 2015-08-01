@@ -803,7 +803,7 @@ html, body, #wrap, #loading {
 .p6_2 {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 10px;
   right: auto;
   height: 630px;
   width: 640px;
