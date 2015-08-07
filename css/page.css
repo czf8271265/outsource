@@ -570,7 +570,7 @@ body {
     width: 71%;
   }
   93% {
-    width: 78%;
+    width: 77%;
   }
   100% {
     width: 100%;
@@ -804,6 +804,31 @@ html, body, #wrap {
   -webkit-animation: s_2_tv_light2 6s step-end;
 }
 
+/* line 23, ../sass/_page2.scss */
+.s_2_tv {
+  -webkit-transform: translateY(-8%);
+  -webkit-transition: -webkit-transform 1.5s;
+}
+
+/* line 27, ../sass/_page2.scss */
+.s_2_table {
+  -webkit-transform: translateY(5%);
+  -webkit-transition: -webkit-transform 1.5s;
+}
+
+/* line 31, ../sass/_page2.scss */
+.s_2_book {
+  -webkit-transform: translateY(10%);
+  -webkit-transition: -webkit-transform 1.5s;
+}
+
+/* line 36, ../sass/_page2.scss */
+.in .s_2_tv,
+.in .s_2_table,
+.in .s_2_book {
+  -webkit-transform: translateY(0%);
+}
+
 /* line 1, ../sass/_page3.scss */
 .s_3_dialog, .s_3_head {
   -webkit-transform-origin: 46% 61%;
@@ -831,6 +856,44 @@ html, body, #wrap {
 /* line 18, ../sass/_page3.scss */
 .played .s_3_book2 {
   -webkit-animation: s_3_book2 linear 3.4s;
+}
+
+/* line 23, ../sass/_page3.scss */
+.s_3_book1 {
+  -webkit-transform: translateY(7%);
+  -webkit-transition: -webkit-transform 1.3s;
+}
+
+/* line 27, ../sass/_page3.scss */
+.s_3_cup {
+  -webkit-transform: translateY(-5%);
+  -webkit-transition: -webkit-transform 1.3s;
+}
+
+/* line 31, ../sass/_page3.scss */
+.s_3_body {
+  -webkit-transform: translateY(-13%);
+  -webkit-transition: -webkit-transform 1.3s;
+}
+
+/* line 35, ../sass/_page3.scss */
+.s_3_body_in {
+  -webkit-transform: translateY(0%);
+  -webkit-transition: none;
+}
+
+/* line 39, ../sass/_page3.scss */
+.s_3_mac {
+  -webkit-transform: translateY(-7%);
+  -webkit-transition: -webkit-transform 1.3s;
+}
+
+/* line 44, ../sass/_page3.scss */
+.in .s_3_book1,
+.in .s_3_cup,
+.in .s_3_body,
+.in .s_3_mac {
+  -webkit-transform: translateY(0%);
 }
 
 /* line 1, ../sass/_page4.scss */
