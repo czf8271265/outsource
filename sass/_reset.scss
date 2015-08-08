@@ -34,11 +34,18 @@ $turnPageTime:1s;
 /***************/
 
 
-.slider {
+#sliderTip {
   position: absolute;height:0;width:100%;padding-top:10%;bottom:0;z-index: 99;
   background: url(../images/tip.png) 0 0 no-repeat;
   background-size: 100%;
+  -webkit-transition:all 0.4s;
 }
+#sliderTip.out{
+  -webkit-transform:translateY(100%);
+  oapcity:0;
+}
+
+
 .item, .item .box {width: 100%;height: 100%;overflow: hidden;}
 .item .box{position:relative;margin:0 auto;}
 

@@ -297,8 +297,8 @@ iSlider.prototype={
             return ;
         }
         
-        //如果是禁用了这一页的滑动, 那么往下是划不动了  但是可以往上滑
-        if (this.opts.noslide && this.opts.noslide.indexOf(this.index)>=0 && e.touches[0].pageY - this._touchstartY<0) {
+        //如果是禁用了这一页的滑动, 那么往下是划不动了  但是可以往上滑 ===>  上下都不可以 by jeffzfcai
+        if (this.opts.noslide && this.opts.noslide.indexOf(this.index)>=0 /*&& e.touches[0].pageY - this._touchstartY<0*/) {
             return ;
         }
 
@@ -308,7 +308,7 @@ iSlider.prototype={
 		this.deltaX2 = currentX - this.deltaX1;//记录当次移动的偏移量
 		this.totalDist = this.startPos + currentX - this.touchInitPos;
 /*
-    if((self.index==0 && this.totalDist>0) || (self.index==self.length-1 && this.totalDist<0))return;//禁止掉第一页和最后一页还能往下/往上拉的效果
+    if((self.index==0 && this.totalDist>0) || (self.index==self.length-1 && this.totalDist<0))return;//禁止掉第一页和最后一页还能往下/往上拉的效果  ===>  by jeffzfcai
 
 		self._current.style.cssText+=this._getTransform(this.totalDist+'px');
 		this.startPos = this.totalDist;

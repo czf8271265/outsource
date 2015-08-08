@@ -1,14 +1,15 @@
 .s_3_head{
-	-webkit-transform-origin: 46% 61%;
+	-webkit-transform-origin: 47% 60%;
 }
 .s_3_dialog{
-	opacity: 0;
-	-webkit-transform:scale(0);
 	-webkit-transform-origin: 40% 54%;
 }
 .s_3_head{
     -webkit-transform:rotate(-29deg);
 }
+/*.s_3_book2{
+	-webkit-transform-origin: 50% 61%;
+}*/
 .play{
 	.s_3_dialog{
 		-webkit-animation:s_3_dialog linear 3s forwards;
@@ -16,22 +17,11 @@
 	.s_3_head{
 		-webkit-animation:s_3_head linear 5s;
 	}
-	/*.s_3_book2{
-		-webkit-animation:s_3_book2 linear 4.8s forwards;
-	}*/
 }
 
-.s_3_book1{
-	-webkit-transform:translateY(10%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.3;
-}
 .s_3_book2{
-	-webkit-transform:translateY(-10%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.3;
-}
-.s_3_cup{
-	-webkit-transform:translateY(-12%);
-	-webkit-transition:-webkit-transform $turnPageTime*2;
+	-webkit-transform:translateY(-20%);
+	-webkit-transition:-webkit-transform $turnPageTime*1.5;
 }
 .w_3_body{
 	position: absolute;
@@ -39,31 +29,23 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	-webkit-transform:translate3d(0,-16%,0);
+	-webkit-transform:translate3d(0,-8%,0);
 	-webkit-transition:-webkit-transform $turnPageTime*1.3;
 }
-.s_3_dialog{
-	-webkit-transform:translateY(-18%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.6;
-}
-.s_3_mac{
-	-webkit-transform:translateY(-20%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.6;
-}
 .s_3_shadow{
-	-webkit-transform:translateY(8%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.6;
+	-webkit-transform:translateY(10%);
+	-webkit-transition:-webkit-transform $turnPageTime;
 }
+.s_3_table{
+	-webkit-transform:translateY(14%);
+	-webkit-transition:-webkit-transform $turnPageTime*1;
+}
+
 .play{
-	.s_3_book1,
+	.w_3_body,
 	.s_3_book2,
-	.s_3_cup,
-	.s_3_mac,
-	.s_3_dialog,
+  .s_3_table,
 	.s_3_shadow{
 		-webkit-transform:translateY(0%);
-	}
-	.w_3_body{
-		 -webkit-transform:translateY(0%);
 	}
 }

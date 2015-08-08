@@ -11,33 +11,30 @@
 	.s_2_head2{
 		-webkit-animation:s_2_head2 2.8s step-end forwards;
 	}
-	.s_2_tv_light2{
-		-webkit-animation:s_2_tv_light2 0.4s step-start infinite;
+	.s_2_tv_light1{
+		-webkit-animation:s_2_tv_light1 0.4s step-start infinite;
 	}
 	.s_2_body1{
-		-webkit-animation:s_2_tv_light1 0.2s step-start infinite;
+		-webkit-animation:s_2_tv_light2 0.2s step-start infinite;
 		-webkit-animation-delay:3s;
 	}
 	.s_2_body2{
-		-webkit-animation:s_2_tv_light2 0.2s step-start infinite;
+		-webkit-animation:s_2_tv_light1 0.2s step-start infinite;
 		-webkit-animation-delay:3s;
 	}
 }
 .s_2_tv{
-	-webkit-transform:translateY(-8%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.5;
-}
-.s_2_table{
-	-webkit-transform:translateY(5%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.5;
+	-webkit-transform:translateX(10%);
+	-webkit-transition:-webkit-transform $turnPageTime*1.2;
 }
 .s_2_book{
 	-webkit-transform:translateY(10%);
 	-webkit-transition:-webkit-transform $turnPageTime*1.5;
 }
 .play{
-	.s_2_tv,
-	.s_2_table,
+	.s_2_tv{
+		-webkit-transform:translateX(0%);
+	}
 	.s_2_book{
 		-webkit-transform:translateY(0%);
 	}

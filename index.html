@@ -36,9 +36,7 @@
           <div class="s s_2_tree"></div>
           <div class="s s_2_tv">
             <div class="s s_2_tv_light1"></div>
-            <div class="s s_2_tv_light2"></div>
           </div>
-          <div class="s s_2_table"></div>
           <div class="s s_2_body1"></div>
           <div class="s s_2_body2"></div>
           <div class="s s_2_head1"></div>
@@ -89,7 +87,7 @@
 
 <!-- 加载提示 _S -->
 <div class="global">
-    <div class="slider"></div>
+    <div id="sliderTip" class="out"></div>
 </div>
 
 <div class="mod_loading" id="loading">
@@ -106,14 +104,21 @@
 
 <script>
 
+var tip = document.getElementById("sliderTip");
+
 var slider = new iSlider({
         wrap:'.wrap',
         item:'.item',
         playClass:'play',
         lastLocate:false,
-        speed:800,
+        speed:1000,
         onslide:function (index) {
-            console.info(index)
+            slider.opts.noslide=[0,1,2,3];
+            tip.className="out";
+            setTimeout(function(){
+              if(index<3)tip.className="";
+              slider.opts.noslide=[];
+            },lockTime(index));
         },
         loadingImgs:[
             'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/open_cover.jpg?max_age=2592000',
@@ -127,6 +132,17 @@ var slider = new iSlider({
             }
         }
     });
+    
+function lockTime(index){
+	switch(index){
+		case 0: return 4000;
+		case 1: return 3000;
+		case 2: return 4600;
+		//case 3: return $("#page4 .main").hasClass("played")?1000:7000;
+		case 3: return 7000;
+		default: return 1000;
+	}
+}
 
 function addcss(css){
     var head = document.getElementsByTagName('head')[0];
