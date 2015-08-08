@@ -97,7 +97,7 @@
 <div class="global">
     <div class="slider"><span class="sprite_global"></span></div>
 </div>
-<div class="mod_loading" id="loading" style="display:none">
+<div class="mod_loading" id="loading">
     <div class="content">
         <div class="progress"><span id="progress_bg" style="width:0;"></span></div>
         <p>Loading...</p>
@@ -117,7 +117,7 @@ var slider = new iSlider({
         item:'.item',
         playClass:'play',
         lastLocate:false,
-        speed:1000,
+        speed:2000,
         onslide:function (index) {
             console.info(index)
         },
