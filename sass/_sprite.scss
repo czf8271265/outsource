@@ -1,0 +1,18 @@
+//css sprites generator
+
+@import "compass/utilities/sprites";
+$sprite: sprite-map("sprite/*.png");
+.s{
+	position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+@each $i in sprite_names($sprite){
+    .s_#{$i}{
+        background-image: url(../images/sprite/#{$i}.png);
+    }
+}

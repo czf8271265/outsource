@@ -1,0 +1,76 @@
+.s_1_dialog{
+	-webkit-transform-origin:55% 69%;
+}
+.play{
+	.s_1_man{
+		-webkit-animation:s_1_man 2s forwards;
+	}
+	.s_1_shelf1{
+		-webkit-animation:shelfRight 2s forwards;
+	}
+	.s_1_shelf2{
+		-webkit-animation:shelfRight 2.2s forwards;
+	}
+	.s_1_shelf3{
+		-webkit-animation:shelfRight 2.4s forwards;
+	}
+	.s_1_shelf4{
+		-webkit-animation:shelfRight 2.6s forwards;
+	}
+	.s_1_shelf5{
+		-webkit-animation:shelfRight 2.8s forwards;
+	}
+	.s_1_shelf6{
+		-webkit-animation:shelfRight 3s forwards;
+	}
+	.s_1_shelf7{
+		-webkit-animation:shelfLeft 2.3s forwards;
+	}
+	.s_1_shelf8{
+		-webkit-animation:shelfLeft 2.5s forwards;
+	}
+	.s_1_shelf9{
+		-webkit-animation:shelfLeft 2.7s forwards;
+	}
+	.s_1_shelf10{
+		-webkit-animation:shelfLeft 2.9s forwards;
+	}
+	.s_1_shelf11{
+		-webkit-animation:shelfLeft 3.1s forwards;
+	}
+	.s_1_shelf12{
+		-webkit-animation:shelfLeft 3.3s forwards;
+	}
+	.s_1_dialog{
+		-webkit-animation:s_1_dialog 3.8s linear forwards;
+	}
+}
+/*
+@media screen and (max-height: 508px) {
+	.s_1_man{
+		top:6%;
+	}
+	.s_1_dialog{
+		top:-7%;
+	}
+}
+@media screen and (min-height: 508px) {
+	.s_1_shelf1,
+	.s_1_shelf2,
+	.s_1_shelf3,
+	.s_1_shelf4,
+	.s_1_shelf5,
+	.s_1_shelf6,
+	.s_1_shelf7,
+	.s_1_shelf8,
+	.s_1_shelf9,
+	.s_1_shelf10,
+	.s_1_shelf11,
+	.s_1_shelf12{
+		top: -4%;
+	}
+	.s_1_dialog{
+		top: -13%;
+	}
+}
+*/

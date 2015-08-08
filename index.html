@@ -1,104 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="format-detection" content="telephone=no">
-<link href="css/page.css" rel="stylesheet">
-<title></title>
-<meta name="front-end technicist" content="">
-<!--分享-->
-<meta name="shareIcon" content="images/share_icon.jpg">
-<meta name="shareText" content="分享文案">
+<title>试试微信读书</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<link rel="stylesheet" href="css/page.css">
 </head>
+<body class="bodybox">
+<div class="wrap" id="wrap">
 
-<body>
+    <div class="item item-1">
+        <div class="box">
+        
+            <div class="s s_1_shelf6"></div>
+            <div class="s s_1_shelf5"></div>
+            <div class="s s_1_shelf4"></div>
+            <div class="s s_1_shelf3"></div>
+            <div class="s s_1_shelf2"></div>
+            <div class="s s_1_shelf1"></div>
+            <div class="s s_1_shelf12"></div>
+            <div class="s s_1_shelf11"></div>
+            <div class="s s_1_shelf10"></div>
+            <div class="s s_1_shelf9"></div>
+            <div class="s s_1_shelf8"></div>
+            <div class="s s_1_shelf7"></div>
+        		<div class="s s_1_man"></div>
+            <div class="s s_1_dialog"></div>
+        
+        </div>
+    </div>
 
-<div id="wrap">
+    <div class="item item-2">
+        <div class="box">
+        </div>
+    </div>
 
-  <div id="loading" class="in">loading</div>
+    <div class="item item-3">
+        <div class="box">
+        </div>
+    </div>
 
-  <section class="page" id="page1">
-    <div class="main">
-		<div class="s s_1_man"></div>
-		<div class="s s_1_shelf6"></div>
-		<div class="s s_1_shelf5"></div>
-		<div class="s s_1_shelf4"></div>
-		<div class="s s_1_shelf3"></div>
-		<div class="s s_1_shelf2"></div>
-		<div class="s s_1_shelf1">
-			<div class="s s_1_shelf1_book"></div>
-		</div>
-		<div class="s s_1_shelf12"></div>
-		<div class="s s_1_shelf11"></div>
-		<div class="s s_1_shelf10"></div>
-		<div class="s s_1_shelf9"></div>
-		<div class="s s_1_shelf8"></div>
-		<div class="s s_1_shelf7">
-			<div class="s s_1_shelf7_book"></div>
-		</div>
-		<div class="s s_1_dialog"></div>
-	</div>
-  </section>
-
-  <section class="page" id="page2">
-    <div class="main">
-		<div class="s s_2_dialog"></div>
-		<div class="s s_2_tv">
-			<div class="s s_2_tv_light1"></div>
-			<div class="s s_2_tv_light2"></div>
-		</div>
-		<div class="s s_2_table"></div>
-		<div class="s s_2_body1"></div>
-		<div class="s s_2_body2"></div>
-		<div class="s s_2_head1"></div>
-		<div class="s s_2_head2"></div>
-		<div class="s s_2_book"></div>
-	</div>
-  </section>
-
-  <section class="page" id="page3">
-    <div class="main">
-		<div class="s s_3_shadow"></div>
-		<div class="s s_3_table"></div>
-		<div class="s s_3_mac"></div>
-		<div class="s s_3_book2"></div>
-		<div class="s s_3_body">
-			<div class="s s_3_head"></div>
-			<div class="s s_3_body s_3_body_in"></div>
-		</div>
-		<div class="s s_3_chair"></div>
-		<div class="s s_3_cup"></div>
-		<div class="s s_3_book1"></div>
-		<div class="s s_3_dialog"></div>
-	</div>
-  </section>
-
-  <section class="page" id="page4">
-    <div class="main">
-		<div class="s s_4_bg"></div>
-		<div class="s s_4_book1"></div>
-		<div class="s s_4_book2"></div>
-		<div class="s s_4_book3"></div>
-		<div class="s s_4_book4"></div>
-		<div class="s s_4_book5"></div>
-		<div class="s s_4_book6"></div>
-		<div class="s s_4_book7"></div>
-		<div class="s s_4_net1"></div>
-		<div class="s s_4_net2"></div>
-		<div class="s s_4_net3"></div>
-		<div class="s s_4_slogan"></div>
-		<div class="s s_4_color"></div>
-		<a href="http://i.weread.qq.com/download?from=promote20150807" class="download"></a>
-	</div>
-  </section>
+    <div class="item item-4">
+        <div class="box">
+        </div>
+    </div>
 
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/sapp.js"></script>
-<script src="js/com.js"></script>
+<!-- 加载提示 _S -->
+<div class="global">
+    <div class="slider"><span class="sprite_global"></span></div>
+</div>
+<div class="mod_loading" id="loading" style="display:none">
+    <div class="content">
+        <div class="progress"><span id="progress_bg" style="width:0;"></span></div>
+        <p>Loading...</p>
+    </div>
+</div>
+<!-- 加载提示 _E -->
+
+<!-- 滑块 _E -->
+
+
+<script type="text/javascript" src="js/iSlider.js"></script> 
+
+<script>
+
+new iSlider({
+        wrap:'.wrap',
+        item:'.item',
+        playClass:'play',
+        onslide:function (index) {
+            console.info(index)
+        },
+        loadingImgs:[
+            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/open_cover.jpg?max_age=2592000',
+            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/im_cover.jpg?max_age=2592000',
+            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/bg1.jpg?max_age=2592000',
+            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/bg2.jpg?max_age=2592000'
+        ],
+        onloading:function (loaded,total) {
+            this.$('#loading div').style.width=loaded/total*100+'%';
+            if (loaded==total) {
+                this.$('#loading').style.display="none"
+            }
+        }
+    });
+
+function addcss(css){
+    var head = document.getElementsByTagName('head')[0];
+    var s = document.createElement('style');
+    s.setAttribute('type', 'text/css');
+    if (s.styleSheet) {   // IE
+        s.styleSheet.cssText = css;
+    } else {                // the world
+        s.appendChild(document.createTextNode(css));
+    }
+    head.appendChild(s);
+}
+function returnBoxSizeCss(){
+  var dRatio=720/1280,
+      ww = window.innerWidth
+              || document.documentElement.clientWidth
+              || document.body.clientWidth,
+      wh = window.innerHeight
+              || document.documentElement.clientHeight
+              || document.body.clientHeight,
+      wRatio = ww/wh;
+  return ".item .box{width:"+(wRatio>dRatio?wh*dRatio:ww)+"px;height:"+(wRatio>dRatio?wh:ww/dRatio)+"px;}"
+}
+addcss(returnBoxSizeCss());
+
+</script>
 </body>
 </html>
