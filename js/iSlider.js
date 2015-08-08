@@ -302,9 +302,13 @@ iSlider.prototype={
             return ;
         }
 
+        console.log(this.totalDist);
+        
 		var currentX = this.opts.isVertical ? e.touches[0].pageY:e.touches[0].pageX;
 		this.deltaX2 = currentX - this.deltaX1;//记录当次移动的偏移量
 		this.totalDist = this.startPos + currentX - this.touchInitPos;
+
+    if((self.index==0 && this.totalDist>0) || (self.index==self.length-1 && this.totalDist<0))return;//禁止掉第一页和最后一页还能往下/往上拉的效果
 
 		self._current.style.cssText+=this._getTransform(this.totalDist+'px');
 		this.startPos = this.totalDist;

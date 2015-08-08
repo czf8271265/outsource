@@ -9,10 +9,7 @@
 .s_3_head{
     -webkit-transform:rotate(-29deg);
 }
-/*.s_3_book2{
-	-webkit-transform-origin: 50% 61%;
-}*/
-.in{
+.play{
 	.s_3_dialog{
 		-webkit-animation:s_3_dialog linear 3s forwards;
 	}
@@ -57,7 +54,7 @@
 	-webkit-transform:translateY(8%);
 	-webkit-transition:-webkit-transform $turnPageTime*1.6;
 }
-.in{
+.play{
 	.s_3_book1,
 	.s_3_book2,
 	.s_3_cup,

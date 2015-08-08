@@ -32,16 +32,62 @@
 
     <div class="item item-2">
         <div class="box">
+          <div class="s s_2_dialog"></div>
+          <div class="s s_2_tree"></div>
+          <div class="s s_2_tv">
+            <div class="s s_2_tv_light1"></div>
+            <div class="s s_2_tv_light2"></div>
+          </div>
+          <div class="s s_2_table"></div>
+          <div class="s s_2_body1"></div>
+          <div class="s s_2_body2"></div>
+          <div class="s s_2_head1"></div>
+          <div class="s s_2_head2"></div>
+          <div class="s s_2_book"></div>
         </div>
     </div>
 
     <div class="item item-3">
         <div class="box">
+          <div class="s s_3_shadow"></div>
+          <div class="s s_3_clock"></div>
+          <div class="s s_3_table"></div>
+          <div class="s s_3_mac"></div>
+          <div class="s s_3_book2"></div>
+          <div class="s s_3_lamp"></div>
+          <div class="w_3_body">
+            <div class="s s_3_head"></div>
+            <div class="s s_3_body s_3_body"></div>
+          </div>
+          <div class="s s_3_chair"></div>
+          <div class="s s_3_cup"></div>
+          <div class="s s_3_book1"></div>
+          <div class="s s_3_dialog"></div>
         </div>
     </div>
 
     <div class="item item-4">
         <div class="box">
+          <div class="p_4_gray">
+            <div class="s s_4_bg"></div>
+            <div class="s s_4_book1"></div>
+            <div class="s s_4_book2"></div>
+            <div class="s s_4_book3"></div>
+            <div class="s s_4_book4"></div>
+            <div class="s s_4_book5"></div>
+            <div class="s s_4_book6"></div>
+            <div class="s s_4_book7"></div>
+            <div class="s s_4_book8"></div>
+            <div class="s s_4_book9"></div>
+            <div class="s s_4_net1"></div>
+            <div class="s s_4_net2"></div>
+            <div class="s s_4_net3"></div>
+            <div class="s s_4_slogan"></div>
+            <div class="s s_4_color"></div>
+          </div>
+          <a href="http://i.weread.qq.com/download?from=promote20150807" class="download">
+            <span class="download_star1"></span><span class="download_star2"></span>
+          </a>
         </div>
     </div>
 
@@ -66,10 +112,11 @@
 
 <script>
 
-new iSlider({
+var slider = new iSlider({
         wrap:'.wrap',
         item:'.item',
         playClass:'play',
+        lastLocate:false,
         onslide:function (index) {
             console.info(index)
         },

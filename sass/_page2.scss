@@ -1,7 +1,7 @@
 .s_2_dialog{
 	-webkit-transform-origin:24% 50%;
 }
-.in{
+.play{
 	.s_2_dialog{
 		-webkit-animation:s_2_dialog 2.2s forwards;
 	}
@@ -35,7 +35,7 @@
 	-webkit-transform:translateY(10%);
 	-webkit-transition:-webkit-transform $turnPageTime*1.5;
 }
-.in{
+.play{
 	.s_2_tv,
 	.s_2_table,
 	.s_2_book{
