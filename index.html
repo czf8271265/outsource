@@ -50,18 +50,12 @@
     <div class="item item-3">
         <div class="box">
           <div class="s s_3_shadow"></div>
-          <div class="s s_3_clock"></div>
           <div class="s s_3_table"></div>
-          <div class="s s_3_mac"></div>
           <div class="s s_3_book2"></div>
-          <div class="s s_3_lamp"></div>
           <div class="w_3_body">
             <div class="s s_3_head"></div>
             <div class="s s_3_body s_3_body"></div>
           </div>
-          <div class="s s_3_chair"></div>
-          <div class="s s_3_cup"></div>
-          <div class="s s_3_book1"></div>
           <div class="s s_3_dialog"></div>
         </div>
     </div>
@@ -95,12 +89,12 @@
 
 <!-- 加载提示 _S -->
 <div class="global">
-    <div class="slider"><span class="sprite_global"></span></div>
+    <div class="slider"></div>
 </div>
+
 <div class="mod_loading" id="loading">
     <div class="content">
-        <div class="progress"><span id="progress_bg" style="width:0;"></span></div>
-        <p>Loading...</p>
+        <div class="progress"></div>
     </div>
 </div>
 <!-- 加载提示 _E -->
@@ -117,7 +111,7 @@ var slider = new iSlider({
         item:'.item',
         playClass:'play',
         lastLocate:false,
-        speed:2000,
+        speed:800,
         onslide:function (index) {
             console.info(index)
         },
@@ -128,7 +122,6 @@ var slider = new iSlider({
             'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/bg2.jpg?max_age=2592000'
         ],
         onloading:function (loaded,total) {
-            this.$('#loading div').style.width=loaded/total*100+'%';
             if (loaded==total) {
                 this.$('#loading').style.display="none"
             }
@@ -155,7 +148,7 @@ function returnBoxSizeCss(){
               || document.documentElement.clientHeight
               || document.body.clientHeight,
       wRatio = ww/wh;
-  return ".item .box{width:"+(wRatio>dRatio?wh*dRatio:ww)+"px;height:"+(wRatio>dRatio?wh:ww/dRatio)+"px;}"
+  return ".item .box{width:"+(wRatio>dRatio?wh*dRatio:ww)+"px;height:"+(wRatio>dRatio?wh:ww/dRatio)+"px;}.item-1 .box,.item-4 .box{width:"+ww+"px;height:"+ww/dRatio+"px;}";
 }
 addcss(returnBoxSizeCss());
 
