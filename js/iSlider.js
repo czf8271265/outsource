@@ -80,6 +80,7 @@ function iSlider(opts) {
         index:0,
         noslide:[],
         speed:400, //滑屏速度 单位:ms
+        delay:150, //延迟多久才addClass 单位:ms
         triggerDist:30,//触发滑动的手指移动最小位移 单位:像素
         isVertical:true,//垂直滑还是水平滑动
         useACC:true, //是否启用硬件加速 默认启用
@@ -104,7 +105,6 @@ iSlider.prototype={
     index : 0,
     length:0,
     _tpl:[],
-    _delayTime:0,
     _sessionKey : location.host+location.pathname,
     _prev:null,
     _current:null,
@@ -178,9 +178,9 @@ iSlider.prototype={
             this._pageInit();
         }
 
-        if (/iPhone|iPod|iPad/.test(navigator.userAgent)) {
-            this._delayTime=50;
-        }
+        // if (/iPhone|iPod|iPad/.test(navigator.userAgent)) {
+            // self.opts.delay=50;
+        // }
 
 
         this._bindEvt();
@@ -246,7 +246,7 @@ iSlider.prototype={
             } catch (e) {
                 console.info(e)
             }
-        },this._delayTime);
+        },self.opts.delay);
     },
 	_touchstart : function (e) {
         var self=this;
@@ -462,7 +462,7 @@ iSlider.prototype={
             self.wrap.insertBefore(self._prev,self._current);
             
 
-        },this._delayTime)
+        },self.opts.delay)
 
     },
 
@@ -522,7 +522,7 @@ iSlider.prototype={
             self._next.classList.add("onload");
             self.wrap.appendChild(self._next);
 
-        },this._delayTime)
+        },self.opts.delay)
 
     },
     /** 
