@@ -1,7 +1,16 @@
 .s_2_dialog{
 	-webkit-transform-origin:24% 50%;
 }
+.s_2_tv{
+	-webkit-transform:translateX(10%);
+	-webkit-transition:-webkit-transform $turnPageTime*1.4;
+}
+.s_2_book{
+	-webkit-transform:translateY(10%);
+	-webkit-transition:-webkit-transform $turnPageTime*2;
+}
 .play{
+/*
 	.s_2_dialog{
 		-webkit-animation:s_2_dialog 2.2s forwards;
 	}
@@ -22,16 +31,7 @@
 		-webkit-animation:s_2_tv_light1 0.2s step-start infinite;
 		-webkit-animation-delay:3s;
 	}
-}
-.s_2_tv{
-	-webkit-transform:translateX(10%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.2;
-}
-.s_2_book{
-	-webkit-transform:translateY(10%);
-	-webkit-transition:-webkit-transform $turnPageTime*1.5;
-}
-.play{
+  */
 	.s_2_tv{
 		-webkit-transform:translateX(0%);
 	}
