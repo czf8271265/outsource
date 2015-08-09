@@ -8,6 +8,11 @@
 }
 .s_4_slogan{
 	background-size: auto 100%;
+  width: 0;
+}
+.s_4_color{
+  opacity:0;
+  -webkit-transform:translateY(0%);
 }
 @media screen and (max-height: 508px) {
 	.s_4_slogan{
@@ -15,10 +20,54 @@
 	}
 }
 
+.s_4_book2{
+  -webkit-transform:translateY(-6%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime*1;
+}
+.s_4_book3{
+  -webkit-transform:translateY(-15%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime*1;
+}
+.s_4_book4{
+  -webkit-transform:translateY(-13%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime*1;
+}
+.s_4_book5{
+  -webkit-transform:translateY(-17%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime*1.1;
+}
+.s_4_bet{
+  opacity:0;
+  -webkit-transform:translateY(-5%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime*1.2;
+}
+
+
 .play{
 	.s_4_slogan{
 		-webkit-animation:s_4_slogan step-end 5s forwards;
 	}
+  .s_4_book2,
+  .s_4_book3,
+  .s_4_book4,
+  .s_4_book5{
+    -webkit-transform:translateY(0%);
+  }
+  .s_4_net{
+    opacity:1;
+    -webkit-transform:translateY(0%);
+  }
+}
+.ended{
+  .p_4_gray{
+		-webkit-animation:p_4_gray linear 6.2s forwards;
+  }
+  .s_4_color{
+		-webkit-animation:s_4_color linear 6.2s forwards;
+  }
+  .download{
+		-webkit-animation:download linear 6.2s forwards;
+  }
 }
 
 .download{
@@ -27,9 +76,11 @@
 	left: 0;
 	right: 0;
 	height: 0;
-	padding-top: 33%;
-	background: #ccc url(../images/sprite/download.jpg) center center no-repeat;
-	background-size: 100%;
+	padding-top: 46%;
+	background: #ccc url(../images/sprite/download_bg.jpg) center center no-repeat;
+	background-size: 100% 100%;
+  -webkit-transform:translateY(100%);
+	&_con,
 	&_star1,
 	&_star2{
 		position: absolute;
@@ -37,8 +88,15 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+    margin:auto;
+    width:100%;
+    height: 0;
+    padding-bottom: 33%;
 		background: 0 0 no-repeat;
-		background-size: 100%;
+		background-size: 100% 100%;
+	}
+	&_con{
+		background-image: url(../images/sprite/download_con.png);
 	}
 	&_star1{
 		background-image: url(../images/sprite/download_star1.png);
@@ -48,47 +106,6 @@
 		background-image: url(../images/sprite/download_star2.png);
 		-webkit-animation:star2 1s infinite;
 	}
-}
-
-$downloadShowTime:7.2s;
-
-.play{
-	.p_4_gray{
-		-webkit-animation:p_4_gray $downloadShowTime forwards;
-	}
-	.s_4_bg,
-	.s_4_book1,
-	.s_4_book2,
-	.s_4_book3,
-	.s_4_book4,
-	.s_4_book5,
-	.s_4_book6,
-	.s_4_book7,
-	.s_4_book8,
-	.s_4_book9,
-	.s_4_net1,
-	.s_4_net2,
-	.s_4_net3{
-		-webkit-animation:p_4_old $downloadShowTime forwards;
-	}
-	.download{
-		-webkit-animation:p_4_download $downloadShowTime forwards;
-	}
-	.s_4_color{
-		-webkit-animation:s_4_color $downloadShowTime forwards;
-	}
-}
-
-@-webkit-keyframes p_4_gray{
-  0%{
-    -webkit-transform:translateY(0%);
-  }
-  80%{
-    -webkit-transform:translateY(0%);
-  }
-  100%{
-    -webkit-transform:translateY(-20%);
-  }
 }
 @-webkit-keyframes star1{
   0%{
@@ -111,21 +128,4 @@ $downloadShowTime:7.2s;
   100%{
     opacity: 1;
   }
-}
-@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){
-	.download{
-		background-image: url(../images/sprite/download_big.jpg);
-		padding-top: 58%;
-	}
-	@-webkit-keyframes p_4_gray{
-		0%{
-			-webkit-transform:translateY(0%);
-		}
-		80%{
-			-webkit-transform:translateY(0%);
-		}
-		100%{
-			-webkit-transform:translateY(-34%);
-		}
-	}
 }

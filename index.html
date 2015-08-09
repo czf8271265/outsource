@@ -67,18 +67,14 @@
             <div class="s s_4_book3"></div>
             <div class="s s_4_book4"></div>
             <div class="s s_4_book5"></div>
-            <div class="s s_4_book6"></div>
-            <div class="s s_4_book7"></div>
-            <div class="s s_4_book8"></div>
-            <div class="s s_4_book9"></div>
-            <div class="s s_4_net1"></div>
-            <div class="s s_4_net2"></div>
-            <div class="s s_4_net3"></div>
+            <div class="s s_4_net"></div>
             <div class="s s_4_slogan"></div>
-            <div class="s s_4_color"></div>
           </div>
+          <div class="s s_4_color"></div>
           <a href="http://i.weread.qq.com/download?from=promote20150807" class="download">
-            <span class="download_star1"></span><span class="download_star2"></span>
+            <span class="download_con"></span>
+            <span class="download_star1"></span>
+            <span class="download_star2"></span>
           </a>
         </div>
     </div>
@@ -106,40 +102,44 @@
 
 var tip = document.getElementById("sliderTip");
 
-var slider = new iSlider({
-        wrap:'.wrap',
-        item:'.item',
-        playClass:'play',
-        lastLocate:false,
-        speed:1000,
-        delay:0,
-        onslide:function (index) {
-        
-            /* lock start */
-            slider.opts.noslide=[0,1,2,3];
-            tip.className="out";
-            setTimeout(function(){
-              if(index<3)tip.className="";
-              slider.opts.noslide=[];
-            },lockTime(index));
-            /* lock end */
-        }
-    });
-    
+
+var slider; 
 window.onload=function(){
+  slider = new iSlider({
+    wrap:'.wrap',
+    item:'.item',
+    playClass:'play',
+    lastLocate:false,
+    speed:1000,
+    delay:0,
+    onslide:function (index) {
+        /* lock start */
+        slider.opts.noslide=[0,1,2,3];
+        tip.className="out";
+        console.log(lockTime(index));
+        setTimeout(function(){
+          if(index<3)tip.className="";
+          slider.opts.noslide=[];
+        },lockTime(index));
+        /* lock end */
+        if(index==3){
+          slider.$("#item4").classList.add("ended");
+          slider._tpl[3].classList.add("ended");
+        }
+    }
+  });
   slider.$("#loading").style.display="none";
+  function lockTime(index){
+    switch(index){
+      case 0: return 4000;
+      case 1: return 3000;
+      case 2: return 4600;
+      case 3: return slider.$("#item4").classList.contains("ended")?1000:5500;
+      default: return 1000;
+    }
+  }
 }
     
-function lockTime(index){
-	switch(index){
-		case 0: return 4000;
-		case 1: return 3000;
-		case 2: return 4600;
-		//case 3: return $("#page4 .main").hasClass("played")?1000:7000;
-		case 3: return 7000;
-		default: return 1000;
-	}
-}
 
 function addcss(css){
     var head = document.getElementsByTagName('head')[0];

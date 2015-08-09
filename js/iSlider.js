@@ -178,9 +178,11 @@ iSlider.prototype={
             this._pageInit();
         }
 
-        // if (/iPhone|iPod|iPad/.test(navigator.userAgent)) {
-            // self.opts.delay=50;
-        // }
+        /*
+        if (/iPhone|iPod|iPad/.test(navigator.userAgent)) {
+            self.opts.delay=50;
+        }
+        */
 
 
         this._bindEvt();
