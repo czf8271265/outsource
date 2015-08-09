@@ -9,7 +9,7 @@
 <body class="bodybox">
 <div class="wrap" id="wrap">
 
-    <div class="item item-1">
+    <div class="item item-1 onload" id="item1">
         <div class="box">
         
             <div class="s s_1_shelf6"></div>
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="item item-2">
+    <div class="item item-2 onload" id="item2">
         <div class="box">
           <div class="s s_2_dialog"></div>
           <div class="s s_2_tree"></div>
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div class="item item-3">
+    <div class="item item-3" id="item3">
         <div class="box">
           <div class="s s_3_shadow"></div>
           <div class="s s_3_table"></div>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div class="item item-4">
+    <div class="item item-4" id="item4">
         <div class="box">
           <div class="p_4_gray">
             <div class="s s_4_bg"></div>
@@ -113,25 +113,21 @@ var slider = new iSlider({
         lastLocate:false,
         speed:1000,
         onslide:function (index) {
+        
+            /* lock start */
             slider.opts.noslide=[0,1,2,3];
             tip.className="out";
             setTimeout(function(){
               if(index<3)tip.className="";
               slider.opts.noslide=[];
             },lockTime(index));
-        },
-        loadingImgs:[
-            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/open_cover.jpg?max_age=2592000',
-            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/im_cover.jpg?max_age=2592000',
-            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/bg1.jpg?max_age=2592000',
-            'http://imgcache.gtimg.cn/mediastyle/mobile/event/20141118_ten_jason/img/bg2.jpg?max_age=2592000'
-        ],
-        onloading:function (loaded,total) {
-            if (loaded==total) {
-                this.$('#loading').style.display="none"
-            }
+            /* lock end */
         }
     });
+    
+window.onload=function(){
+  slider.$("#loading").style.display="none";
+}
     
 function lockTime(index){
 	switch(index){

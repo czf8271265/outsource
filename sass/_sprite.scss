@@ -12,7 +12,9 @@ $sprite: sprite-map("sprite/*.png");
   background-size: 100% 100%;
 }
 @each $i in sprite_names($sprite){
+  .onload{
     .s_#{$i}{
         background-image: url(../images/sprite/#{$i}.png);
     }
+  }
 }

@@ -104,7 +104,7 @@ iSlider.prototype={
     index : 0,
     length:0,
     _tpl:[],
-    _delayTime:150,
+    _delayTime:0,
     _sessionKey : location.host+location.pathname,
     _prev:null,
     _current:null,
@@ -444,7 +444,7 @@ iSlider.prototype={
                 self.removeClass(self.$('.'+self.opts.playClass,self.wrap),self.opts.playClass)
             }
             self.addClass(self._current,self.opts.playClass)
-
+            
             try {
                 self.opts.onslide.call(self,self.index);
             } catch (e) {
@@ -460,6 +460,7 @@ iSlider.prototype={
             self._prev = self._tpl[prevIndex].cloneNode(true);
             self._prev.style.cssText+='-webkit-transition-duration:0ms;'+self._getTransform('-'+self.scrollDist+'px');
             self.wrap.insertBefore(self._prev,self._current);
+            
 
         },this._delayTime)
 
@@ -518,6 +519,7 @@ iSlider.prototype={
 
             self._next = self._tpl[nextIndex].cloneNode(true);
             self._next.style.cssText+='-webkit-transition-duration:0ms;'+self._getTransform(self.scrollDist+'px');
+            self._next.classList.add("onload");
             self.wrap.appendChild(self._next);
 
         },this._delayTime)
