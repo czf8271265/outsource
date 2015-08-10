@@ -85,7 +85,6 @@
 	height: 8.75%;
 }
 
-
 .play{
 	.s_1_man{
 		-webkit-animation:s_1_man 1.8s;
@@ -130,32 +129,3 @@
 		-webkit-animation:s_1_dialog 4s linear;
 	}
 }
-/*
-@media screen and (max-height: 508px) {
-	.s_1_man{
-		top:6%;
-	}
-	.s_1_dialog{
-		top:-7%;
-	}
-}
-@media screen and (min-height: 508px) {
-	.s_1_shelf1,
-	.s_1_shelf2,
-	.s_1_shelf3,
-	.s_1_shelf4,
-	.s_1_shelf5,
-	.s_1_shelf6,
-	.s_1_shelf7,
-	.s_1_shelf8,
-	.s_1_shelf9,
-	.s_1_shelf10,
-	.s_1_shelf11,
-	.s_1_shelf12{
-		top: -4%;
-	}
-	.s_1_dialog{
-		top: -13%;
-	}
-}
-*/
