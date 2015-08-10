@@ -89,42 +89,19 @@
 	.s_1_man{
 		-webkit-animation:s_1_man 1.8s;
 	}
-	.s_1_shelf1{
-		-webkit-animation:shelfRight 2s both;
+
+	@for $i from 1 through 6{
+		.s_1_shelf#{$i}{
+			-webkit-animation:shelfRight (2s + 0.2s * ($i - 1)) both;
+		}
 	}
-	.s_1_shelf2{
-		-webkit-animation:shelfRight 2.2s both;
+
+	@for $i from 7 through 12{
+		.s_1_shelf#{$i}{
+			-webkit-animation:shelfLeft (2.1s + 0.2s * ($i - 1)) both;
+		}
 	}
-	.s_1_shelf3{
-		-webkit-animation:shelfRight 2.4s both;
-	}
-	.s_1_shelf4{
-		-webkit-animation:shelfRight 2.6s both;
-	}
-	.s_1_shelf5{
-		-webkit-animation:shelfRight 2.8s both;
-	}
-	.s_1_shelf6{
-		-webkit-animation:shelfRight 3s both;
-	}
-	.s_1_shelf7{
-		-webkit-animation:shelfLeft 2.3s  both;
-	}
-	.s_1_shelf8{
-		-webkit-animation:shelfLeft 2.5s both;
-	}
-	.s_1_shelf9{
-		-webkit-animation:shelfLeft 2.7s both;
-	}
-	.s_1_shelf10{
-		-webkit-animation:shelfLeft 2.9s both;
-	}
-	.s_1_shelf11{
-		-webkit-animation:shelfLeft 3.1s both;
-	}
-	.s_1_shelf12{
-		-webkit-animation:shelfLeft 3.3s both;
-	}
+
 	.s_1_dialog{
 		-webkit-animation:s_1_dialog 4s linear both;
 	}
