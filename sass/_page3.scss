@@ -11,7 +11,7 @@
 .s_3_book2{
 	// -webkit-transform:translateY(-16%);
 	// -webkit-transition:-webkit-transform $turnPageTime;
-	-webkit-transform:rotateX(-45deg);
+	-webkit-transform:rotateX(-80deg);
 	-webkit-transform-origin:0% 62.34375%;
 }
 
@@ -53,5 +53,8 @@
 	}
 	.s_3_head{
 		-webkit-animation:s_3_head linear 5s both;
+	}
+	.s_3_book2{
+		-webkit-animation:s_3_book2 linear 5s both;
 	}
 }
