@@ -14,13 +14,17 @@
 	-webkit-transform:rotateX(-45deg);
 	-webkit-transform-origin:0% 62.34375%;
 }
-/*
+
 .w_3_body{
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	-webkit-transform:translate3d(0,0,0) rotateX(0deg);
+}
+/*
+.w_3_body{
 	-webkit-transform:translate3d(0,-6%,0);
 	-webkit-transition:-webkit-transform $turnPageTime*0.8;
 }
