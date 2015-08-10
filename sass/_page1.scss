@@ -88,7 +88,7 @@
 
 .play{
 	.s_1_man{
-		-webkit-animation:s_1_man 1.8s;
+		-webkit-animation:s_1_man 2s both;
 	}
 
 	@for $i from 1 through 6{
@@ -102,7 +102,7 @@
 			-webkit-animation:shelfLeft (2.1s + 0.2s * ($i - 7)) both;
 		}
 	}
-	
+
 
 	.s_1_dialog{
 		-webkit-animation:s_1_dialog 4s linear both;
