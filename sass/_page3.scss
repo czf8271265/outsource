@@ -8,11 +8,13 @@
   opacity: 0;
 }
 
-/*
 .s_3_book2{
-	-webkit-transform:translateY(-16%);
-	-webkit-transition:-webkit-transform $turnPageTime;
+	// -webkit-transform:translateY(-16%);
+	// -webkit-transition:-webkit-transform $turnPageTime;
+	-webkit-transform:rotateX(-45deg);
+	-webkit-transform-origin:0% 62.34375%;
 }
+/*
 .w_3_body{
 	position: absolute;
 	top: 0;
