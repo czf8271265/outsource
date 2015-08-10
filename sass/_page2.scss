@@ -3,20 +3,23 @@
   left:10.694444%;
   width:77.5%;
   height:41.484375%;
-	-webkit-transform-origin:24% 50%;
+	-webkit-transform-origin:20% 100%;
   opacity: 0;
   -webkit-transform:scale(0);
 }
+
 .s_2_tv{
 	-webkit-transform:translateX(10%);
 	-webkit-transition:-webkit-transform $turnPageTime*1.4;
 }
+
 .s_2_tv{
   top:46.484375%;
   left:25.416667%;
   width:60.277778%;
   height:32.1875%;
 }
+
 .s_2_tv_light{
   top:0;
   left:0;
@@ -51,6 +54,9 @@
   left:0%;
   width:53.333333%;
   height:36.015625%;
+}
+.s_2_body2{
+  visibility: hidden
 }
 .s_2_tree{
   top:38.125%;
