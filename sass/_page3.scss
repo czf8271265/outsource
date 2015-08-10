@@ -8,12 +8,10 @@
   opacity: 0;
 }
 
-#item3{background:rgba(255,0,0.4);}
+#item3{background:rgba(0,255,0,0.4);}
 
 
 .s_3_book2{
-	// -webkit-transform:translateY(-16%);
-	// -webkit-transition:-webkit-transform $turnPageTime;
 	-webkit-transform:rotateX(-80deg);
 	-webkit-transform-origin:0% 62.34375%;
 }
@@ -26,36 +24,13 @@
 	left: 0;
 	-webkit-transform:translate3d(0,0,0) rotateX(0deg);
 }
-/*
-.w_3_body{
-	-webkit-transform:translate3d(0,-6%,0);
-	-webkit-transition:-webkit-transform $turnPageTime*0.8;
-}
-.s_3_shadow{
-	-webkit-transform:translateY(10%);
-	-webkit-transition:-webkit-transform $turnPageTime*0.8;
-}
-.s_3_table{
-	-webkit-transform:translateY(14%);
-	-webkit-transition:-webkit-transform $turnPageTime*0.8;
-}
-*/
 
 .play{
-/*
-	.w_3_body,
-  .s_3_table,
-	.s_3_shadow,
-	.s_3_book2{
-		-webkit-transform:translateY(0%);
-	}
-  */
-  
 	.s_3_dialog{
 		-webkit-animation:s_3_dialog linear 3s forwards;
 	}
 	.s_3_head{
-		-webkit-animation:s_3_head linear 5s;
+		-webkit-animation:s_3_head linear 5s forwards;
 	}
 	.s_3_book2{
 		-webkit-animation:s_3_book2 linear 5s both;
