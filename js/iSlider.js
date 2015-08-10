@@ -218,6 +218,7 @@ iSlider.prototype={
         if (this.index>0) {
             this._prev=this._tpl[this.index-1].cloneNode(true);
             this._prev.style.cssText+=this._getTransform('-'+this.scrollDist+'px');
+            this._prev.classList.remove("play");
             initDom.appendChild(this._prev)
         }else {
             this._prev=null;
@@ -461,6 +462,7 @@ iSlider.prototype={
 
             self._prev = self._tpl[prevIndex].cloneNode(true);
             self._prev.style.cssText+='-webkit-transition-duration:0ms;'+self._getTransform('-'+self.scrollDist+'px');
+            self._prev.classList.remove("play");
             self.wrap.insertBefore(self._prev,self._current);
             
 
