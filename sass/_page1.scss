@@ -99,9 +99,10 @@
 
 	@for $i from 7 through 12{
 		.s_1_shelf#{$i}{
-			-webkit-animation:shelfLeft (2.1s + 0.2s * ($i - 1)) both;
+			-webkit-animation:shelfLeft (2.1s + 0.2s * ($i - 7)) both;
 		}
 	}
+	
 
 	.s_1_dialog{
 		-webkit-animation:s_1_dialog 4s linear both;
