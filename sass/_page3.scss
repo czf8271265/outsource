@@ -8,7 +8,7 @@
   opacity: 0;
 }
 
-#item1{background:rgba(0,255,255,0.4);}
+#item1{background:rgba(50,100,0,0.4);}
 
 
 .s_3_book2{
@@ -22,12 +22,15 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	-webkit-transform:translate3d(0,0,0) rotateX(0deg);
+}
+
+.s_3_body{
+	-webkit-transform:translate3d(0,0,0);
 }
 
 .play{
 	.s_3_dialog{
-		-webkit-animation:s_3_dialog linear 3s forwards;
+		-webkit-animation:s_3_dialog linear 3s;
 	}
 	.s_3_head{
 		-webkit-animation:s_3_head linear 5s both;
