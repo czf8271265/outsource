@@ -1,27 +1,39 @@
 .s_3_head{
-	-webkit-transform-origin: 47% 60%;
+	-webkit-transform-origin: 46.66667% 21.444201%;
     -webkit-transform:rotate(-33deg);
 }
 .s_3_dialog{
 	-webkit-transform-origin: 40% 54%;
   -webkit-transform:scale(0);
   opacity: 0;
+  top:14.296875%;
+  left:8.055556%;
+  width:39.444444%;
+  height:34.609375%;
 }
-
-#item1{background:rgba(255,10,0,0.4);}
-
+.s_3_shadow{
+  top:auto;
+  bottom: 0;
+  height:18.90625%;
+}
 
 .s_3_book2{
 	-webkit-transform:rotateX(-80deg);
 	-webkit-transform-origin:0% 62.34375%;
+  top:54.453125%;
+  left:36.805556%;
+  width:19.861111%;
+  height:7.890625%;
 }
 
 .w_3_body{
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	top: 52.578125%;
+  height:35.703125%;
+}
+.s_3_table{
+	top: 36.953125%;
+  height: 50.46875%;
 }
 
 .s_3_body{
