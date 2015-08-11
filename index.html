@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-<meta charset="utf-8">
-<title>璇曡瘯寰俊璇讳功</title>
+<meta charset="gb2312">
+<title>试试微信读书</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
 <link rel="stylesheet" href="css/page.css">
 </head>
@@ -82,7 +82,7 @@
 
 </div>
 
-<!-- 鍔犺浇鎻愮ず _S -->
+<!-- 加载提示 _S -->
 <div class="global">
     <div id="sliderTip" class="out"></div>
 </div>
@@ -92,9 +92,9 @@
         <div class="progress"></div>
     </div>
 </div>
-<!-- 鍔犺浇鎻愮ず _E -->
+<!-- 加载提示 _E -->
 
-<!-- 婊戝潡 _E -->
+<!-- 滑块 _E -->
 
 
 <script type="text/javascript" src="js/iSlider.js"></script> 
@@ -132,7 +132,7 @@ window.onload=function(){
     switch(index){
       case 0: return 4200;
       case 1: return 3200;
-      case 2: return 4800;
+      case 2: return 3200;
       case 3: return slider.$("#item4").classList.contains("ended")?1000:5500;
       default: return 1000;
     }
@@ -163,6 +163,35 @@ function returnBoxSizeCss(){
   return ".item .box{width:"+(wRatio>dRatio?wh*dRatio:ww)+"px;height:"+(wRatio>dRatio?wh:ww/dRatio)+"px;}.item-1 .box,.item-4 .box{width:"+ww+"px;height:"+ww/dRatio+"px;}";
 }
 addcss(returnBoxSizeCss());
+
+if (typeof WeixinJSBridge == "undefined" && typeof onBridgeReady == 'function') {
+	if (document.addEventListener) {
+		document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+	} else if (document.attachEvent) {
+		document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+		document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+	}
+}
+
+function onBridgeReady() {
+	WeixinJSBridge.on("menu:share:timeline",function() {
+		WeixinJSBridge.invoke("shareTimeline", {
+			img_url: "http://res.mail.qq.com/node/wrpage/css/images/ic_launcher.png",
+			link: window.location.href,
+			desc: "还记得上一次读书是什么时候吗？",
+			title: document.title
+		});
+	});
+	WeixinJSBridge.on("menu:share:appmessage",function() {
+		WeixinJSBridge.invoke("sendAppMessage", {
+			img_url: "http://res.mail.qq.com/node/wrpage/css/images/ic_launcher.png",
+			link: window.location.href,
+			desc: "还记得上一次读书是什么时候吗？",
+			title: document.title
+		});
+	});
+}
+
 
 </script>
 </body>

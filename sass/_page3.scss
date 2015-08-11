@@ -18,7 +18,7 @@
 }
 
 .s_3_book2{
-	-webkit-transform:rotateX(-80deg);
+	-webkit-transform:rotateX(-90deg);
 	-webkit-transform-origin:0% 62.34375%;
   top:54.453125%;
   left:36.805556%;
@@ -44,12 +44,12 @@
 
 .play{
 	.s_3_dialog{
-		-webkit-animation:s_3_dialog linear 3s;
+		-webkit-animation:s_3_dialog linear 2.8s forwards;
 	}
 	.s_3_head{
-		-webkit-animation:s_3_head linear 5s both;
+		-webkit-animation:s_3_head linear 4s both;
 	}
 	.s_3_book2{
-		-webkit-animation:s_3_book2 linear 5s both;
+		-webkit-animation:s_3_book2 linear 4s both;
 	}
 }

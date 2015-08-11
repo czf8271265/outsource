@@ -27,50 +27,51 @@
   bottom: 0;
   width: 100%;
   height: 14.765625%;
+  -webkit-transform:translateY(70%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book2{
-  top: 65.078125%;
+  top: 65.278125%;
   left: 30.5556%;
   width: 40.138889%;
-  height: 20.390625%;
-  -webkit-transform:translateY(-6%);
-  -webkit-transition:-webkit-transform ease-in $turnPageTime*1;
+  height: 20.234375%;
+  -webkit-transform:translateY(30%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book3{
-  top: 64.296875%;
+  top: 64.543%;
   left: 68.3%;
   width: 31.66667%;
   height: 21.09375%;
-  -webkit-transform:translateY(-15%);
-  -webkit-transition:-webkit-transform ease-in $turnPageTime*1;
+  -webkit-transform:translateY(12%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book4{
-  top: 80.078125%;
+  top: 80.22315%;
   left: 6.527778%;
   width: 29.027778%;
   height: 6.015625%;
-  -webkit-transform:translateY(-13%);
-  -webkit-transition:-webkit-transform ease-in $turnPageTime*1;
+  -webkit-transform:translateY(-100%);
+  -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book5{
   top: 60.234375%;
   left: 33.75%;
   width: 36.66667%;
   height: 5.15625%;
-  -webkit-transform:translateY(-20%);
-  -webkit-transition:-webkit-transform ease-in $turnPageTime*1.1;
-}
-.s_4_bet{
-  opacity:0;
-  -webkit-transform:translateY(-5%);
+  -webkit-transform:translateY(10%);
   -webkit-transition:-webkit-transform ease-in $turnPageTime*1.2;
 }
-
+.s_4_net{
+  opacity:0;
+  -webkit-transition:opacity ease-in $turnPageTime*1.2;
+}
 
 .play{
 	.s_4_slogan{
 		-webkit-animation:s_4_slogan step-end 5s forwards;
 	}
+  .s_4_book1,
   .s_4_book2,
   .s_4_book3,
   .s_4_book4,
@@ -79,7 +80,6 @@
   }
   .s_4_net{
     opacity:1;
-    -webkit-transform:translateY(0%);
   }
 }
 .ended{
