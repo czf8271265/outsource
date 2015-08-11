@@ -113,14 +113,14 @@ window.onload=function(){
     speed:1000,
     delay:0,
     onslide:function (index) {
-        /* lock start */
+        /* lock start 
         slider.opts.noslide=[0,1,2,3];
         tip.className="out";
         setTimeout(function(){
           if(index<3)tip.className="";
           slider.opts.noslide=[];
         },lockTime(index));
-        /* lock end */
+         lock end */
         if(index==3){
           slider.$("#item4").classList.add("ended");
           slider._tpl[3].classList.add("ended");

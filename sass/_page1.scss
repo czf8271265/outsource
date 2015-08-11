@@ -89,7 +89,7 @@
 
 .play{
 	.s_1_man{
-		-webkit-animation:s_1_man 2s both;
+		-webkit-animation:s_1_man 0.8s linear both;
 	}
 
 	@for $i from 1 through 6{
