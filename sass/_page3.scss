@@ -8,13 +8,10 @@
   opacity: 0;
   top:14.296875%;
   left:8.055556%;
-  width:39.444444%;
-  height:34.609375%;
 }
 .s_3_shadow{
   top:auto;
   bottom: 0;
-  height:18.90625%;
 }
 
 .s_3_book2{
@@ -22,20 +19,20 @@
 	-webkit-transform-origin:0% 62.34375%;
   top:54.453125%;
   left:36.805556%;
-  width:19.861111%;
-  height:7.890625%;
 }
 
 .w_3_body{
 	position: absolute;
 	top: 52.578125%;
 	left: 0;
-	width: 100%;
-  height:35.703125%;
+  @include sSize(720px,457px);
+}
+.onload .s_3_body,
+.onload .s_3_head{
+  height:100%;
 }
 .s_3_table{
 	top: 36.953125%;
-  height: 50.46875%;
 }
 
 .s_3_body{

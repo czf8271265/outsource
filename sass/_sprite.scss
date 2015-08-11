@@ -14,6 +14,7 @@ $sprite: sprite-map("sprite/*.png");
   .onload{
     .s_#{$i}{
         background-image: url(../images/sprite/#{$i}.png);
+        @include sSize(image-width("../images/sprite/#{$i}.png"),image-height("../images/sprite/#{$i}.png"));
     }
   }
 }

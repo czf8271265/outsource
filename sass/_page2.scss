@@ -1,8 +1,6 @@
 .s_2_dialog{
   top:8.515625%;
   left:10.694444%;
-  width:77.5%;
-  height:41.484375%;
 	-webkit-transform-origin:20% 100%;
   opacity: 0;
   -webkit-transform:scale(0);
@@ -16,11 +14,9 @@
 .s_2_tv{
   top:46.484375%;
   left:25.416667%;
-  width:60.277778%;
-  height:32.1875%;
 }
 
-.s_2_tv_light{
+.onload .s_2_tv_light{
   top:0;
   left:0;
   width:100%;
@@ -30,8 +26,6 @@
 .s_2_book{
   top:80.703125%;
   left:56.666667%;
-  width:38.472222%;
-  height:10.625%;
 	-webkit-transform:translateY(150%);
 	-webkit-transition:-webkit-transform $turnPageTime*2.2;
 }
@@ -39,8 +33,6 @@
 .s_2_head2{
   top:50.703125%;
   left:25.972222%;
-  width:15.138889%;
-  height:9.6875%;
 }
 .s_2_head1{
   visibility:hidden;
@@ -52,8 +44,6 @@
 .s_2_body2{
   top:58.75%;
   left:0%;
-  width:53.333333%;
-  height:36.015625%;
 }
 .s_2_body2{
   visibility: hidden
@@ -61,8 +51,6 @@
 .s_2_tree{
   top:38.125%;
   left:31.666667%;
-  width:68.333333%;
-  height:29.140625%;
 }
 
 .play{

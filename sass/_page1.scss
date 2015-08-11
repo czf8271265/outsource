@@ -1,18 +1,11 @@
-#item1{
-  background:rgba(0,0,0,0.5)
-}
-
 .s_1_man{
 	top: auto;
 	bottom: 0;
-	height: 40.46875%
 }
 
 .s_1_dialog{
 	top: 34.6875%;
 	left: 28.055556%;
-	width: 48.611111%;
-	height: 22.03125%;
 	-webkit-transform-origin:51% 100%;
 	-webkit-transform:translate(0);
 }
@@ -21,79 +14,55 @@
 	top: 30.859375%;
 	left: auto;
 	right: 0;
-	width: 26.388889%;
-	height: 62.421875%;
 }
 
 .s_1_shelf2{
 	top: 40.859375%;
 	left: auto;
 	right: 0;
-	width: 32.916667%;
-	height: 39.296875%;
 }
 .s_1_shelf3{
 	top: 48.671875%;
 	left: auto;
 	right: 0;
-	width: 37.361111%;
-	height: 26.953125%;
 }
 .s_1_shelf4{
 	top: 53.359375%;
 	left: auto;
 	right: 0;
-	width: 41.388889%;
-	height: 19.140625%;
 }
 .s_1_shelf5{
 	top: 56.25%;
 	left: auto;
 	right: 0;
-	width: 44.166667%;
-	height: 13.4375%;;
 }
 .s_1_shelf6{
 	top: 58.046875%;
 	left: auto;
 	right: 0;
-	width: 45.833333%;
-	height: 8.75%;
 }
 .s_1_shelf7{
 	top: 30.859375%;
-	width: 27.638889%;
-	height: 63.046875%;
 }
 .s_1_shelf8{
 	top: 40.703125%;
-	width: 32.916667%;
-	height: 39.296875%;
 }
 .s_1_shelf9{
 	top: 48.515625%;
-	width: 37.361111%;
-	height: 26.953125%;
 }
 .s_1_shelf10{
 	top: 53.203125%;
-	width: 41.388889%;
-	height: 19.14625%;
 }
 .s_1_shelf11{
 	top: 56.09375%;
-	width: 44.166667%;
-	height: 13.4375%;
 }
 .s_1_shelf12{
 	top: 57.890625%;
-	width: 45.833333%;
-	height: 8.75%;
 }
 
 .play{
 	.s_1_man{
-		-webkit-animation:s_1_man 0.8s linear both;
+		-webkit-animation:s_1_man 2s both;
 	}
 
 	@for $i from 1 through 6{

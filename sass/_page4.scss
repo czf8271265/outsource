@@ -9,7 +9,6 @@
 .s_4_slogan{
 	background-size: auto 100%;
   width: 0;
-  height: 23.28125%;
 }
 .s_4_color{
   opacity:0;
@@ -25,40 +24,30 @@
 .s_4_book1{
   top: auto;
   bottom: 0;
-  width: 100%;
-  height: 14.765625%;
   -webkit-transform:translateY(70%);
   -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book2{
   top: 65.278125%;
   left: 30.5556%;
-  width: 40.138889%;
-  height: 20.234375%;
   -webkit-transform:translateY(30%);
   -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book3{
   top: 64.543%;
   left: 68.3%;
-  width: 31.66667%;
-  height: 21.09375%;
   -webkit-transform:translateY(12%);
   -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book4{
   top: 80.22315%;
   left: 6.527778%;
-  width: 29.027778%;
-  height: 6.015625%;
   -webkit-transform:translateY(-100%);
   -webkit-transition:-webkit-transform ease-in $turnPageTime;
 }
 .s_4_book5{
   top: 60.234375%;
   left: 33.75%;
-  width: 36.66667%;
-  height: 5.15625%;
   -webkit-transform:translateY(10%);
   -webkit-transition:-webkit-transform ease-in $turnPageTime*1.2;
 }

@@ -29,7 +29,23 @@ body{line-height:1.5;font-size:12px;font-family:"hiragino sans gb",Arial;color:#
 
 
 /***************/
+
 $turnPageTime:1s;
+
+$pageWidth:720px;
+
+$pageHeight:1280px;
+
+@mixin sSize($w,$h){
+  width:percentage($w/$pageWidth);
+  height:percentage($h/$pageHeight);
+}
+
+@mixin sPos($t,$l){
+  top:percentage($t/$pageHeight);
+  left:percentage($l/$pageWidth);
+}
+
 /***************/
 
 
